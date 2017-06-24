@@ -1,0 +1,41 @@
+$brian_eich: 'http://s3.amazonaws.com/digitaltrends-uploads-prod/2014/04/Brendan-Eich-mozilla.jpg';
+$brian_kernighan: 'https://www.princeton.edu/sites/default/files/images/2016/03/Kernighan_homepage.jpg';
+$bjarne_stroutrup: 'https://i.ytimg.com/vi/NvWTnIoQZj4/0.jpg';
+#carousel-body{
+	height: 300px;
+	position: relative;
+	#image1,#image2,#image3{
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 300px;
+	}
+	#image1{
+		content: url($brian_eich);
+		display: block;
+	}
+	#image2{
+		content: url($brian_kernighan);
+		display: none;
+	}
+	#image3{
+		content: url($bjarne_stroutrup);
+		display: none;
+	}
+	#left-arrow{
+		float: left;
+		height: inherit;
+		border: 1px grey solid;
+	}
+	#right-arrow{
+		float: right;
+		height: inherit;
+		border: 1px grey solid;
+	}
+	&:after{
+		content: " ";
+		display: block;
+		clear: both;
+	}
+}
+

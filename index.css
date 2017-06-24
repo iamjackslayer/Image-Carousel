@@ -1,0 +1,31 @@
+#carousel-body {
+  height: 300px;
+  position: relative; }
+  #carousel-body #image1, #carousel-body #image2, #carousel-body #image3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 300px; }
+  #carousel-body #image1 {
+    content: url("http://s3.amazonaws.com/digitaltrends-uploads-prod/2014/04/Brendan-Eich-mozilla.jpg");
+    display: block; }
+  #carousel-body #image2 {
+    content: url("https://www.princeton.edu/sites/default/files/images/2016/03/Kernighan_homepage.jpg");
+    display: none; }
+  #carousel-body #image3 {
+    content: url("https://i.ytimg.com/vi/NvWTnIoQZj4/0.jpg");
+    display: none; }
+  #carousel-body #left-arrow {
+    float: left;
+    height: inherit;
+    border: 1px grey solid; }
+  #carousel-body #right-arrow {
+    float: right;
+    height: inherit;
+    border: 1px grey solid; }
+  #carousel-body:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+/*# sourceMappingURL=index.css.map */
